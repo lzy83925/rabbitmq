@@ -23,7 +23,7 @@ public class WorkerRecv {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                 String msg = new String(body, "UTF-8");
-                System.out.println("[1] Recv msg:" + msg);
+                System.out.println("[1] Recv1 msg:" + msg);
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
