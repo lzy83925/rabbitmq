@@ -20,7 +20,7 @@ public class PublishSend {
 
         String msg="publish subscribe mode";
         channel.basicPublish(EXCHANGE_NAME,"",null,msg.getBytes());
-        System.out.println("Send:"+msg);
+        System.out.println("TxSend:"+msg);
         channel.close();
         connection.close();
 

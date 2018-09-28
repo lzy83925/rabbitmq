@@ -22,7 +22,7 @@ public class Send {
 
         for (int i = 0; i < 50; i++) {
             String msg = "I send " + i + " work1roundrobin queue msg";
-            System.out.println("Worker Queue Send"+i);
+            System.out.println("Worker Queue TxSend"+i);
             channel.basicPublish("", QUEUE_NAME, null, msg.getBytes());
             Thread.sleep(i * 20);
 
